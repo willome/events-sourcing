@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    show-sql: false
+    properties:
+      hibernate.dialect: com.github.willome.events.sourcing.test.H2JsonDialect
+      hibernate.hbm2ddl.auto: 
+  main:
+    banner-mode: 'off'
+
+liquibase:
+  enabled: true
+  change-log: classpath:liquibase-changelog-tests.xml
+
+events:
+  publisher:
+    frequence: 3000
+    queues:  
+      com.willome.github.events.sourcing.test.CustomerSaveEvent: my-topic
+      com.willome.github.events.sourcing.test.PaymentRequestEvent: my-topic
+      
+app.scheduling.enable: false
+app.async.enable: false

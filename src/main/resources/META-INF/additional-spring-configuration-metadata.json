@@ -1,0 +1,7 @@
+{"properties": [
+  {
+    "name": "events.publisher.frequence",
+    "type": "java.lang.String",
+    "description": "A description for 'events.publisher.frequence'"
+  }
+]}

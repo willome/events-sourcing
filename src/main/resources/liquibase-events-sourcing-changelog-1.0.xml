@@ -1,0 +1,44 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+	
+	<property name="type_jsonb" value="jsonb" dbms="postgresql" />
+	<property name="type_jsonb" value="varchar" dbms="h2" />
+	
+	<property name="type_varchar" value="text" dbms="postgresql" />
+	<property name="type_varchar" value="varchar" dbms="h2" />
+	
+	<changeSet id="init-events-sourcing-1.0" author="willome" context="not-legacy">
+		<createTable tableName="t_events">
+			<column autoIncrement="true" name="id" type="BIGSERIAL" />
+			<column name="payload" type="${type_jsonb}">
+				<constraints nullable="false" />
+			</column>
+			<column name="event_uuid" type="uuid">
+				<constraints nullable="false"/>
+			</column>
+			<column name="occured_at" type="datetime">
+				<constraints nullable="false"/>
+			</column>
+			<column name="status" type="${type_varchar}">
+				<constraints nullable="false"/>
+			</column>
+			<column name="sent_at" type="datetime"/>
+			<column name="event_type" type="${type_varchar}">
+				<constraints nullable="false"/>
+			</column>
+			<column name="event_version" type="tinyint">
+				<constraints nullable="false"/>
+			</column>
+			<column name="event_schema" type="${type_varchar}">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
+		<addPrimaryKey columnNames="id" tableName="t_events" constraintName="t_events_pkey" />
+		<createIndex tableName="t_events" indexName="idx_t_events_status">
+            <column name="status"/>
+        </createIndex>
+	</changeSet>
+
+
+</databaseChangeLog>
