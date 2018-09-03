@@ -1,5 +1,5 @@
 # events-sourcing
-- Events-sourcing is a library used to generate and send events for a Spring application (using ActiveMQ but this could change on a future version). 
+- Events-sourcing is a library used to generate and send events for a Spring application. 
 - Hibernate Domain events are automatically sent when an entity is persisted (or deleted). 
 
 
@@ -21,6 +21,13 @@ then in the project
 ## Spring (boot) configuration
 ```
 @ComponentScan({"com.axione.events.sourcing"})
+```
+
+## EventPublisher
+Define a new EventPublisher : 
+```
+@Service
+public MyEventPublisher implements EventPublisher {}
 ```
 
 ## liquibase
