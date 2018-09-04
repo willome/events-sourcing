@@ -15,7 +15,7 @@ import com.github.willome.events.sourcing.repository.EventEntityRepository;
 /**
  * EventEntity Store
  *
- * @author Axione
+ * @author willome
  *
  */
 @Service

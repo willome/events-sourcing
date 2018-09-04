@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * Each time a model entity (having a method with this annotation) will be saved,
  * the result of this method will be used as the payload of the {@link EventEntity}
  *
- * @author Axione
+ * @author willome
  *
  */
 @Target(ElementType.TYPE)

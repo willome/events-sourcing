@@ -30,7 +30,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 /**
  *
- * @author Axione
+ * @author willome
  *
  */
 public class JsonbUserType implements ParameterizedType, UserType {

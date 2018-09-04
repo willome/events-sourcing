@@ -16,7 +16,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 /**
  * Spring Boot Configuration
  *
- * @author Axione
+ * @author willome
  *
  */
 @Configuration

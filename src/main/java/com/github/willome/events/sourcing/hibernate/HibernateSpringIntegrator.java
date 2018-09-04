@@ -25,7 +25,7 @@ import org.springframework.stereotype.Component;
 /**
  * Register Hibernate listeners.
  *
- * @author Axione
+ * @author willome
  *
  */
 @Component

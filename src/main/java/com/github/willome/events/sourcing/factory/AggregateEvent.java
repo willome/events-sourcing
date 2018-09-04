@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Axione
+ * @author willome
  *
  * @param <U> the source type
  */

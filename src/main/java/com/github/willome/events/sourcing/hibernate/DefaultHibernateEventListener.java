@@ -24,7 +24,7 @@ import com.github.willome.events.sourcing.domain.SaveDomainEvent;
 /**
  * Default Hibernate events listener.
  *
- * @author Axione
+ * @author willome
  *
  */
 @SuppressWarnings("serial")

@@ -7,7 +7,7 @@ import com.github.willome.events.sourcing.publisher.PublishPendingEventsSchedule
  * into the db. Then a listener will be able to push it to the Bus (ActiveMQ/Kafka).
  * {@link PublishPendingEventsScheduler}
  *
- * @author Axione
+ * @author willome
  *
  */
 public class EventEntitySaveEvent {

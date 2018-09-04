@@ -14,13 +14,13 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.github.willome.events.sourcing.domain.EventEntity;
-import com.github.willome.events.sourcing.domain.EventEntitySaveEvent;
 import com.github.willome.events.sourcing.domain.EventEntity.Status;
+import com.github.willome.events.sourcing.domain.EventEntitySaveEvent;
 import com.github.willome.events.sourcing.repository.EventEntityRepository;
 
 /**
  *
- * @author Axione
+ * @author willome
  *
  */
 @Service

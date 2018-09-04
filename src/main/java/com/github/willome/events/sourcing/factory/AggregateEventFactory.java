@@ -2,7 +2,7 @@ package com.github.willome.events.sourcing.factory;
 
 /**
  *
- * @author Axione
+ * @author willome
  *
  * @param <U> Source Type
  * @param <V> AggregateEvent

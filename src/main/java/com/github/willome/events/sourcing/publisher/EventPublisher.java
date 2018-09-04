@@ -5,7 +5,7 @@ import com.github.willome.events.sourcing.domain.EventEntity;
 /**
  * EventPublisher main Interface
  *
- * @author Axione
+ * @author willome
  *
  */
 public interface EventPublisher {

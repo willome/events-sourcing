@@ -4,7 +4,7 @@ import java.sql.Types;
 
 /**
  *
- * @author Axione
+ * @author willome
  *
  */
 public class H2JsonDialect extends org.hibernate.dialect.H2Dialect {

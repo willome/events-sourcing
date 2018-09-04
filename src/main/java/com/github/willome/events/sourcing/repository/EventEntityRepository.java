@@ -13,7 +13,7 @@ import com.github.willome.events.sourcing.domain.EventEntity.Status;
 
 /**
  *
- * @author Axione
+ * @author willome
  *
  */
 public interface EventEntityRepository extends CrudRepository<EventEntity, Long> {
@@ -27,7 +27,7 @@ public interface EventEntityRepository extends CrudRepository<EventEntity, Long>
     Optional<EventEntity> findFirstByStatusOrderByOccuredAtAsc(Status status);
 
     /**
-     * 
+     *
      * @param status Status
      * @return all the events having the status
      */

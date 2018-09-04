@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * The event instanciated by the publisher. Payload can be any serializable {@code Object}.
  *
- * @author Axione
+ * @author willome
  *
  */
 @SuppressWarnings("serial")
