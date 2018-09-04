@@ -6,10 +6,13 @@ spring:
       hibernate.hbm2ddl.auto: 
   main:
     banner-mode: 'off'
-
-liquibase:
-  enabled: true
-  change-log: classpath:liquibase-changelog-tests.xml
+  liquibase:
+    enabled: true
+    change-log: classpath:liquibase-changelog-tests.xml
+  
+logging:
+  level:
+    root: error
 
 events:
   publisher:

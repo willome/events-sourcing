@@ -38,8 +38,8 @@ public class EventsSourcingTest {
 
     @After
     public void clean() {
-        customerRepository.delete(customerRepository.findAll());
-        eventEntityRepository.delete(eventEntityRepository.findAll());
+        customerRepository.deleteAll(customerRepository.findAll());
+        eventEntityRepository.deleteAll(eventEntityRepository.findAll());
     }
 
     @Test
